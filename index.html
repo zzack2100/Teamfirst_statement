@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--新增防小人功能-->
+      <script type="text/javascript">
+          window.onload = function() {
+             document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 //禁止F12
+                 if(e.keyCode == 123) {
+ 
+                     return false;
+                  //禁止Ctrl+Shift+I
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+ 
+                     return false;
+                    //禁止Shift+F10
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+
+                     return false;
+                }
+             };
+            //禁止右鍵
+             document.oncontextmenu = function() {
+
+                 return false;
+             }
+        }
+     </script>
+<!--新增防小人功能到時後直接寫一個JS套上去-->
+
+<title>首頁</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- gallery -->
+<link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
+<!-- //gallery -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Cantarell" rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Black+And+White+Picture" rel='stylesheet'>
+
+    <!-- Icon Fonts -->
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="mylayout_header_left">
+			<p>這是正式版的第一次自我介紹</p>
+		</div>
+		<div class="mylayout_header_right">
+			<ul>
+				<li><i class="fa fa-phone" aria-hidden="true"></i>(+886) 915 028 282</li>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:100412082@stud.sju.edu.tw">100412082@stud.sju.edu.tw</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="web_navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+					    <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<li>  
+				   <div id="movetxt" <h1> <a id="logo-text "  class="logo-text" href="https://github.com/zzack2100/My_Personal-statement" target="_blank"> William.liu</a></h1> </div>
+				
+                    </li>     
+						  
+					   
+					<!--div class="web_navigation_pos">
+					
+					</div-->
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="cl-effect-5" id="cl-effect-5">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html"><span data-hover="首頁">首頁</span></a></li>
+							<li><a href="#services" class="scroll"><span data-hover="服務項目">服務項目</span></a></li>
+							<li><a href="#about" class="scroll"><span data-hover="關於我">關於我</span></a></li>
+							<li><a href="#work" class="scroll"><span data-hover="作品集"> 作品集</span></a></li>
+							<li><a href="#team" class="scroll"><span data-hover="小組成員">小組成員</span></a></li>
+							<li><a href="#mail2" class="scroll"><span data-hover="聯絡我們">聯絡我們</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>	
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<p><i>William.liu</i> <span>First</span> or <span>Last?</span> Design Web</p>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- about -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="col-md-4 weblayout_about_left">
+				<h3 class="w3l_head">關於我</h3>
+				<p class="webls_head_para">就小小的自我介紹一下</p>
+			</div>
+			<div class="col-md-8 weblayout_about_right">
+				<p>想梗想梗想梗可以打一大堆的廢話 <i>用這個標籤可以跳空白記得喔</i></p>
+				<ul>
+				<li>這個箭頭可能會有剽竊嫌疑 檔案名稱 font-awesome.min.css <i class="fa fa-long-arrow-right" aria-hidden="true"></i>如果沒有以後就是素材</li>
+				</ul>
+
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //about -->
+<!-- about-bottom -->
+	<div class="about-bottom">
+		<div class="container">
+			<div class="col-md-7 webinfo_about_bottom_right">
+				<h2>我們可以在這裡設計 多元的計能專長</h2>
+				<div class="col-md-6 webinfo_about_bottom_right_wthree">
+					<ul>
+						<li></i>雖然圖片狗屎爛</li>
+						<li>但這個</li>
+						<li></i>設計</li>
+						<li></i>六個一排的</li>
+						<li></i>欄位</li>
+					</ul>
+				</div>
+				<div class="col-md-6 webinfo_about_bottom_right_wthree">
+					<ul>
+						<li></i>你可以</li>
+						<li></i>看到</li>
+						<li></i>我分段</li>
+						<li></i>的樣子</li>
+						<li></i>有沒有很開心</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-5 webinfo_about_bottom_left">
+				<img src="images/hamster.png" alt=" " class="img-responsive" />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //about-bottom -->
+<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1">服務項目</h3>
+			<p class="webls_head_para webls_head_para1">我們主要服務的內容</p>
+			<div class="w3_weblayout_services_grids">
+				<div class="col-md-3 w3_weblayout_services_grid">
+					<div class="w3_weblayout_services_grid_agile">
+						<h3>除了賣便當</h3>
+						<p>到底還要做什麼?</p>
+					</div>
+				</div>
+				
+				<div class="col-md-3 w3_weblayout_services_grid">
+					<div class="w3_weblayout_services_grid_agile">
+						<h3>需要大家</h3>
+						<p>開始集思廣義一下</p>
+					</div>
+				</div>
+				
+				<div class="col-md-3 w3_weblayout_services_grid">
+					<div class="w3_weblayout_services_grid_agile">
+						<h3>不然課長失業以後</h3>
+						<p>就準備登出了</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- //services -->
+<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1 w3l_head1_mylayout">目前參與計畫的人有誰?</h3>
+			<p class="webls_head_para webls_head_para1">我也不知道</p>
+			<div class="w3_team_grids">
+				<div class="col-md-3 w3_team_grid">
+					<div class="w3_team_grid1">
+						<img src="images/hamster.png" alt=" " class="img-responsive" />
+						<div class="myteam_grid1_pos">
+							<ul class="webls_social">
+								<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<h4>William.liu</h4>
+					<p>便當招集人</p>
+				</div>
+				
+				<div class="col-md-3 w3_team_grid">
+					<div class="w3_team_grid1">
+						<img src="images/Bamboo-rat.png" alt=" " class="img-responsive" />
+						<div class="myteam_grid1_pos">
+						</div>
+					</div>
+					<h4>呂建銘</h4>
+					<p>維護便當員</p>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //team -->
+<!-- gallery -->
+	<div class="team-bottom" id="work">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1">作品及</h3>
+			<p class="webls_head_para webls_head_para1">我們美美的作品及便當味</p>
+			<div class="mylayout_gallery_grids">
+				<ul class="w3l_gallery_grid" id="lightGallery">
+
+					<li data-title="2019 未來式" data-desc="我還沒去日本" data-src="images/pancake.jpg" data-responsive-src="images/pancake.jpg"> 
+						<div class="mylayout_gallery_grid1 box">
+							<a href="#">
+								<img src="images/pancake.jpg" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<h4 class="title overtext"> 別人去的日本 </h4>
+									<p class="tagline overtext"> 然後還要跪著要照片 </p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="2018 12 月 4號" data-desc="不是我自己買的拉麵" data-src="images/Lāmiàn.jpg" data-responsive-src="Lāmiàn.jpg"> 
+						<div class="mylayout_gallery_grid1 box">
+							<a href="#">
+								<img src="images/Lāmiàn.jpg" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<h4 class="title overtext"> 這張是唯一不用修圖就很漂亮的拉麵 </h4>
+									<p class="tagline overtext">看起來就很好吃，謝謝贊助</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="20181204" data-desc="Cherry blossoms" data-src="images/Cherry-blossoms.png" data-responsive-src="Cherry-blossoms.png"> 
+						<div class="mylayout_gallery_grid1 box">
+							<a href="#">
+								<img src="images/Cherry-blossoms.png" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<h4 class="title overtext"> Cherry blossoms </h4>
+									<p class="tagline overtext">櫻花的英文 </p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="20181204" data-desc="為甚麼曝光這麼恐怖" data-src="images/train.jpg" data-responsive-src="images/train.jpg"> 
+						<div class="mylayout_gallery_grid1 box">
+							<a href="#">
+								<img src="images/train.jpg" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<h4 class="title overtext">小火車</h4>
+									<p class="tagline overtext">下面好恐怖啊!!</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="20181204" data-desc="這裡也是日本???" data-src="images/bone.jpg" data-responsive-src="images/bone.jpg"> 
+						<div class="mylayout_gallery_grid1 box">
+							<a href="#">
+								<img src="images/bone.jpg" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<h4 class="title overtext"> 或許是日本? </h4>
+									<p class="tagline overtext"> 不知道是哪裡 </p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li data-title="20181204" data-desc="嗚嗚嗚嗚" data-src="images/pancake2.jpg" data-responsive-src="images/pancake.jpg"> 
+						<div class="mylayout_gallery_grid1 box">
+							<a href="#">
+								<img src="images/pancake.jpg" alt=" " class="img-responsive" />
+								<div class="overbox">
+									<h4 class="title overtext"> 很多食物 </h4>
+									<p class="tagline overtext"> 我很喜歡</p>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/lightGallery.js"></script>
+	<script>
+    	 $(document).ready(function() {
+			$("#lightGallery").lightGallery({
+				mode:"fade",
+				speed:800,
+				caption:true,
+				desc:true,
+				mobileSrc:true
+			});
+		});
+    </script>
+<!-- //gallery -->
+
+			<!-- Stats-Number-Scroller-Animation-JavaScript -->
+				<script src="js/waypoints.min.js"></script> 
+				<script src="js/counterup.min.js"></script> 
+				<script>
+					jQuery(document).ready(function( $ ) {
+						$('.counter').counterUp({
+							delay: 100,
+							time: 1000
+						});
+					});
+				</script>
+			<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+
+		</div>
+	</div>
+<!-- //services-bottom -->
+<!-- mail -
+	<div class="mail" id="mail">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1">Mail Us</h3>
+			<p class="webls_head_para webls_head_para1">send us a message</p>
+			<div class="w3_mail_grids">
+				<form action="#" method="post">
+					<span class="input input--jiro">
+						<input class="input__field input__field--jiro" type="text" id="input-10" name="Name" placeholder="Your Name" required=""/>
+						<label class="input__label input__label--jiro" for="input-10">
+							<span class="input__label-content input__label-content--jiro">Your Name</span>
+						</label>
+					</span>
+					<span class="input input--jiro">
+						<input class="input__field input__field--jiro" type="email" id="input-11" name="Email" placeholder="Your Email Address" required=""/>
+						<label class="input__label input__label--jiro" for="input-11">
+							<span class="input__label-content input__label-content--jiro">Your Email</span>
+						</label>
+					</span>
+					<span class="input input--jiro">
+						<input class="input__field input__field--jiro" type="text" id="input-12" name="Phone Number" placeholder="Phone Number" required=""/>
+						<label class="input__label input__label--jiro" for="input-12">
+							<span class="input__label-content input__label-content--jiro">Phone Number</span>
+						</label>
+					</span>
+					<textarea name="Message" placeholder="Message..." required></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/classie.js"></script>
+	<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+<!-- //mail -->
+<!---<div class="map">
+	<div class="container">
+		<h3 class="w3l_head w3l_head1">Locate Us</h3>
+		<p class="webls_head_para webls_head_para1">how to find us</p>
+	</div>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.9930629574787!2d-46.72469593507033!3d-23.640419470401582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5116b59b5a09%3A0x11c3bbea465870!2sCompany+Business+Towers+-+V%C3%A1rzea+de+Baixo%2C+S%C3%A3o+Paulo+-+SP%2C+Brazil!5e0!3m2!1sen!2sin!4v1473675527894" style="border:0"></iframe>
+</div>--->
+<!-- footer -->
+	<div class="w3l_footer" id="mail2">
+		<div class="container">
+			<h3 class="w3l_head w3l_head1 w3l_head1_mylayout">加入我們 開始維護大量的狗屎爛網站!</h3>
+			<p class="webls_head_para webls_head_para1">不然打斷你的腳</p>
+			<form action="#" method="post">
+				<input type="email" name="Email" placeholder="Email" required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<li>	</li>
+			<li>	</li>
+			
+			<div class="webls_footer_grids">
+				<!--p class="weblayout_mylayout_est"></p-->
+				<div class="webls_footer_grid">
+					<div class="col-md-4 webls_footer_grid_left">
+						<div class="webls_footer_grid_leftl">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</div>
+				
+						<div class="webls_footer_grid_leftr">
+							<h4>聯絡地址</h4>
+							<div class="map">
+	<div class="container">
+
+	</div>
+	<iframe width='100%' height='200' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=中華民國總統府&z=16&output=embed&t='></iframe>   <!--只要給我打地址就好了喔!!-->
+</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 webls_footer_grid_left">
+						<div class="webls_footer_grid_leftl">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="webls_footer_grid_leftr">
+							<h4>Email</h4>
+							<a href="mailto:100412082@stud.sju.edu.tw">100412082@stud.sju.edu.tw</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 webls_footer_grid_left">
+						<div class="webls_footer_grid_leftl">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="webls_footer_grid_leftr">
+							<h4>聯絡我</h4>
+							<p>(+886) 915 028 282</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="w3l_footer_pos">
+			<p>2019.My Personal Statement <a href="https://github.com/zzack2100/My_Personal-statement" target="_blank" title="William.liu">William.liu</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+<!-- here stars scrolling icon   向上到首頁   move-top.js-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });     
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
