@@ -31,7 +31,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	float:left;
 }
 .mylayout_header_left p{
-	color:#999;
+	color:#fff;
 	line-height:1.8em;
 }
 .mylayout_header_right{
@@ -43,21 +43,21 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 }
 .mylayout_header_right ul li{
 	display:inline-block;
-	color:#212121;
+	color:#fff;
 }
 .mylayout_header_right ul li:last-child{
 	margin-left:2em;
 }
 .mylayout_header_right ul li i{
-	color:#212121;
+	color:#fff;
 	padding-right:1em;
 }
 .mylayout_header_right ul li a{
-	color:#212121;
+	color:#fff;
 	text-decoration:none;
 }
 .mylayout_header_right ul li a:hover{
-	color:#fa3d43;
+	color:#fff;
 }
 /*-- nav --*/
 .navbar-default {
@@ -68,10 +68,13 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
     margin-bottom: 0;
 }
 .web_navigation {
-    border-top: 1px solid #999;
+    border-top: 1px solid #fff;
 	position:relative;
 }
 /*標題面設計*/
+.titlecolor{
+    background: #a5a6a2;
+}
 .navbar-nav {
     float: none;
 }
@@ -87,7 +90,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
     background: none;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #212121;
+    color: #fff;
 }
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 .navbar-nav > li > a {
@@ -221,7 +224,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	border-right:1px solid #212121;
 }
 .weblayout_about_right p{
-	color:#999;
+	color:#000;
 	line-height:2em;
 	margin-bottom:3em;
 }
@@ -352,7 +355,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
     width: 60%;
 }
 .w3_weblayout_services_grid_agile p{
-	color:#999;
+	color:#000;
 	line-height:2em;
 }
 .w3_weblayout_services_grid:hover .w3_weblayout_services_grid_agile{
@@ -756,7 +759,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	padding:10px 20px;
 	float:left;
 	background:#000;
-	border:1px solid #999;
+	border:1px solid #000;
 	font-size:14px;
 	color:#212121;
 	width:75%;
@@ -810,11 +813,11 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
     margin-bottom: .5em;
 }
 .webls_footer_grid_leftr p{
-	color:#999;
+	color:#000;
 	line-height:1.5em;
 }
 .webls_footer_grid_leftr a{
-	color:#999;
+	color:#000;
 	text-decoration:none;
 	font-size:14px;
 }
@@ -1624,7 +1627,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 
 .logo-text {
     font-family: 'Charmonman', cursive;
-    color:#999;
+    color:#000;
 }
 
 .logo-text {
