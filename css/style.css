@@ -31,8 +31,8 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	float:left;
 }
 .mylayout_header_left p{
-	color:#fff;
-	line-height:1.8em;
+	color:#000;
+	line-height:3em;
 }
 .mylayout_header_right{
 	float:right;
@@ -73,7 +73,8 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 }
 /*標題面設計*/
 .titlecolor{
-    background: #a5a6a2;
+     /* background: #000;*/
+	background-image: linear-gradient( 135deg,#fff 10%,#bc41cc 100%);
 }
 .navbar-nav {
     float: none;
@@ -456,21 +457,21 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
     display: inline-block;
 }
 .webls_social li a {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     color: #f83e03;
     text-align: center;
     display: inline-block;
-    padding-top: .5em;
+    padding-top: .1em;
     font-size: 13px;
-    background: #fff;
+    background: #4184cc;
 }
 .webls_social li a:hover{
 	background: #f83e03;
 	color:#fff;
 }
 .web_team_grid:hover .web_team_grid1 img{
-	opacity:.5;
+	opacity:.6;
 }
 .web_team_grid:hover .myteam_grid1_pos{
 	display:block;
