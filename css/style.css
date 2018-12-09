@@ -275,7 +275,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 /*-- //about --*/
 /*-- about-bottom --*/
 .about-bottom{
-	background:url(../images/bg1.png) no-repeat 0px 0px;
+	background:url(../images/bg2.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -283,12 +283,30 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	-ms-background-size:cover;
 	min-height:400px;
 }
+.about-bottom p{
+	font-size: .7em;
+	color:#fff;
+	text-align:left;
+	text-transform:capitalize;
+
+}
+.about-bottom p i{
+	display: block;
+    font-size: .7em;
+}
+.about-bottom p span{
+	font-weight: bold;
+    background: #948c8b;
+    display: inline-block;
+    padding: 0 .5em;
+}
+
 .webinfo_about_bottom_left img {
     margin: 0 auto;
 }
 .webinfo_about_bottom_right h2{
 	font-size: 2em;
-    color: #000;
+    color: #f81900;
     line-height: 1.5em;
     text-transform: capitalize;
     margin: 2em 0 1em;
