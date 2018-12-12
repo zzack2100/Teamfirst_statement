@@ -860,11 +860,11 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
     margin-bottom: .5em;
 }
 .webls_footer_grid_leftr p{
-	color:#000;
+	color:#fff;
 	line-height:1.5em;
 }
 .webls_footer_grid_leftr a{
-	color:#000;
+	color:#fff;
 	text-decoration:none;
 	font-size:14px;
 }
