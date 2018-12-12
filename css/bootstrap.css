@@ -6582,11 +6582,6 @@ button.close {
     display: none !important;
   }
 }
- .loading-items-center{
-	 -ms-flex-align:center!important;loading-items:center!important
-	 }
-.Analysis-content-center{
-	-ms-flex-pack:center!important;Analysis-content:center!important
-	}
+
 	
 /*# sourceMappingURL=bootstrap.css.map */

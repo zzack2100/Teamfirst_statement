@@ -1,0 +1,3 @@
+ .image-flex{display:-ms-flexbox!important;display:flex!important}
+ .item-content-center{-ms-flex-pack:center!important;justify-content:center!important}
+ .items-center{-ms-flex-align:center!important;align-items:center!important}
