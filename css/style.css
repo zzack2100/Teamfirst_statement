@@ -913,15 +913,14 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	display: none;
 	text-decoration: none;
 	position: fixed;
-	bottom: 20px;
-	right: 2%;
+	bottom: 3%;
+	right: 3%;
 	overflow: hidden;
-	z-index: 999; 
 	width: 32px;
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/arrow.png) no-repeat 0px 0px;
+	background: url("../images/arrow.png") no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 32px;
