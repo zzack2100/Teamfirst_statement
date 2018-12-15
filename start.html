@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--新增防小人功能-->
+      <script type="text/javascript">
+          window.onload = function() {
+             document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 //禁止F12
+                 if(e.keyCode == 123) {
+ 
+                     return false;
+                  //禁止Ctrl+Shift+I
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+ 
+                     return false;
+                    //禁止Shift+F10
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+
+                     return false;
+                }
+             };
+            //禁止右鍵
+             document.oncontextmenu = function() {
+
+                 return false;
+             }
+        }
+     </script>
+<!--新增防小人功能到時後直接寫一個JS套上去-->
+
+<title>首頁</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link  href="css/responsiveslides.css" rel="stylesheet">
+<!-- js -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- gallery -->
+<link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
+<!-- //gallery -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<script src="js/responsiveslides.js"></script>
+  
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Cantarell" rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Black+And+White+Picture" rel='stylesheet'>
+
+    <!-- Icon Fonts -->
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="css/loding.css" rel="stylesheet">
+</head>
+	
+<body>
+<div class="about" id="about">
+	<div class="banner">
+    <!-- Preloader -->
+
+ <video width="600" height="400" controls>
+  <source src="video/pc.webm" type="video/mp4">
+
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/diuexInkshA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<li></li>
+
+<h1>  <a id="logo-text "  class="logo-text"  target="_blank"> <font color="white">燃燒生命有很多種方法，最愚蠢的就是過勞 </font></h1> 
+
+<li></li>
+<h1><a href="index.html"><span data-hover="點我進去">點我進去</a></h1>
+			
+    </div>		
+	   </div>	
+<!-- header -->
+
+<!-- //here ends scrolling icon -->
+</body>
+</html>
