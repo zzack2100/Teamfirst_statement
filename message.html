@@ -1,0 +1,36 @@
+<html>
+<head>
+<!-- 加上以下這一行，以免有亂碼產生 -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>留言板</title>
+</head>
+<body>
+<hr size=1>
+<div>
+<!--以下是您的站台名稱-->
+<h2>我的訪客留言板</h2>
+<br>
+<!--以下是您的版權宣告-->
+<h2> v1.0 精簡版 (C) 1997 written by OLS3</h2>
+<hr size=1>
+<table><tr><td>
+
+<!--以下是表單內容, 共有二個欄位: 姓名及留言內容, 您可以自行再增添; 
+表單採 POST 呼叫法, cgi 程式名稱是 GBK.cgi -->
+<form name="ols3" method="post" id="send">
+
+<!--姓名欄位的名稱是 name-->
+姓名: <input type="text" name="name" size="30">
+<br>
+
+<!--留言內容欄位的名稱是 comment-->
+留言內容:<br>
+<textarea name="comment" rows="5" cols="45"></textarea>
+<p>
+<input type="submit" value="確定"> <input type="reset" value="清除">
+<input type="button" value="回上一頁" onClick="history.back()">
+</form>
+
+</td></tr></table></div>
+</body>
+</html>
