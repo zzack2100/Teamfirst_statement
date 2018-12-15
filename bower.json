@@ -1,0 +1,28 @@
+{
+  "name": "judy6886",
+  "authors": [
+    "judy6886"
+  ],
+  "description": "留言客户端",
+  "main": "index.html",
+  "keywords": [
+    "comment",
+    "restful",
+    "api",
+    "django",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/judy6886",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.2"
+  }
+}

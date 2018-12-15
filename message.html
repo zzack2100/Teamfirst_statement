@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet" />
+</head>
+<body>
+<div class="col-sm-1"></div>
+<div id="comments" class="comments-area col-sm-10" ng-app="CommentApp"  ng-controller="CommentController">
+    <div id="respond" class="comment-respond"><!--留言区-->
+        <h5><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;发表评论</h5>
+        <form id="commentform" class="form-horizontal" name="CommentForm" novalidate ng-submit="CommentForm.$valid && submitDate()">
+            <!--novalidate,这是h5自己的表单验证，因为angular也有自己的表单验证，怕冲突-->
+            <div class="form-group" ng-class="{'has-error':CommentForm.email.$invalid && CommentForm.email.$dirty}">
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="邮箱" name="email" ng-model="BaseDate.email" ng-required="true" autocomplete="off">
+                </div>
+                <label for="inputEmail3" class="control-label">邮箱</label>
+            </div>
+            <div class="form-group" ng-class="{'has-error':CommentForm.name.$invalid && CommentForm.name.$dirty}">
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputNickname" placeholder="昵称" name="name" ng-model="BaseDate.name" ng-required="true" ng-pattern="/^[^0-9].*/" autocomplete="off">
+                </div>
+                <label for="inputNickname" class="control-label">昵称</label>
+            </div>
+            <div class="form-group" ng-class="{'has-error':CommentForm.comment.$invalid && CommentForm.comment.$dirty}">
+                <div class="col-sm-8">
+                    <textarea id="mytextarea" class="form-control" rows="5" style="resize: none;" name="comment" ng-model="BaseDate.comment" ng-required="true" ng-minlength="6" ng-maxlength="12"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submitcomment" class="btn btn-primary" ng-disabled="CommentForm.$invalid">提交评论</button>
+        </form>
+    </div><!--留言区结束-->
+    <div id="comment-show">
+        <!--展示留言，一整条留言-->
+        <ul>
+            <li ng-repeat="item in objects.results">
+                <div class="comment-level" cid="5">
+                    <div class="comment-box"><!--评论信息-->
+                        <p><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;
+                            <span class="nn">{{item.name}}</span>&nbsp;&nbsp;
+                            <span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;<span>{{item.agent}}</span>&nbsp;&nbsp;
+                            <span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;<span>{{item.publish_date | date: 'yyyy/MM/dd HH:mm:ss'}}</span>&nbsp;&nbsp;
+                        </p>
+                        <p class="comment-content"></p><!--为了好看 占个位置-->
+                        <p>{{item.comment}}</p>
+                        <p></p><!--为了好看 占个位置-->
+                        <div class="text-muted comment-comment reply"></div><!--底部功能, 回复, 踩 顶-->
+                    </div>
+                </div><!--评论展示-->
+            </li>
+
+        </ul>
+    </div><!--留言结束-->
+    <!--分页区-->
+    <nav aria-label="Page navigation" class="pull-right">
+        <ul class="pagination">
+            <li><a ng-click="toppage()">首页</a></li>
+            <li><a aria-label="Previous" ng-click="prevpage($event)"><span aria-hidden="true">&laquo;</span></a></li>
+            <li class="active"><a >{{objects.current_page}} <span class="sr-only">(current)</span></a></li>
+            <li><a aria-label="Next" ng-click="nextpage($event)"><span aria-hidden="true">&raquo;</span></a></li>
+            <li><a ng-click="endpage()">末页</a></li>
+        </ul>
+    </nav>
+
+</div>
+<div class="col-sm-1"></div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/comment.js"></script>
+</body>
+</html>
