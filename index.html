@@ -34,14 +34,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link  href="css/responsiveslides.css" rel="stylesheet">
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <!-- gallery -->
 <link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
 <!-- //gallery -->
@@ -50,7 +51,57 @@
 <!-- //font-awesome icons -->
 <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<script src="js/responsiveslides.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
 
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns"
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "transparent-btns"
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "large-btns"
+      });
+	   // Slideshow 4
+      $("#slider4").responsiveSlides({
+	    auto: true,
+		pager:false,
+		nav:false,
+		speed: 500,
+		namespace: "callbacks",
+		before: function () {
+		$('.events').append("<li>before event fired.</li>");
+					},
+		after: function () {
+		$('.events').append("<li>after event fired.</li>");
+		}
+		});
+						
+});
+  </script>
 
     <!-- Google Fonts -->
 
@@ -63,18 +114,32 @@
 
     <!-- Icon Fonts -->
     <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="css/loding.css" rel="stylesheet">
 </head>
 	
 <body>
+    <!-- Preloader -->
+    <div class="preloader image-flex item-content-center items-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="images/artist.png" alt="">
+        </div>
+    </div>
 <!-- header -->
+<div class="titlecolor" id="titlecolor">
 	<div class="header">
 		<div class="mylayout_header_left">
 			<p>這是正式版的第一次自我介紹</p>
+	  <embed src="media/Samurai-Champloo.mp3" width="80" height="44" autostart="true" loop="true"></embed>
 		</div>
 		<div class="mylayout_header_right">
 			<ul>
 				<li><i class="fa fa-phone" aria-hidden="true"></i>(+886) 915 028 282</li>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:100412082@stud.sju.edu.tw">100412082@stud.sju.edu.tw</a></li>
+			<ul class="webls_social">
+				<li><a href="#" class="web_agile_facebook"><i class="fa fa-facebook" ></i></a></li>
+				<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" ></i></a></li>
+			</ul>
 			</ul>
 		</div>
 		<div class="clearfix"> </div>
@@ -116,11 +181,26 @@
 			</nav>	
 		</div>
 	</div>
+</div>	
 <!-- //header -->
 <!-- banner -->
 	<div class="banner">
+	
 		<div class="container">
-			<p><i>William.liu</i> <span>First</span> or <span>Last?</span> Design Web</p>
+		
+          <ul class="rslides" id="slider4">
+					<li>
+					
+					<p><i> William.liu</i> <span>Why</span> We Would be Write Warm Web?  </p>
+					</li>
+					<li>
+					<p><i> William.liu</i> <span>I</span>  Know We make <span>somthing</span> wrong? </p>
+					</li>
+					<li>
+					<p><i> William.liu</i> <span>Or</span> Just <span>Make</span> Fun ?</p>
+					</li>
+	
+          </ul>
 		</div>
 	</div>
 <!-- //banner -->
@@ -128,13 +208,13 @@
 	<div class="about" id="about">
 		<div class="container">
 			<div class="col-md-4 weblayout_about_left">
-				<h3 class="w3l_head">關於我</h3>
+				<h3 class="teamweb_head">關於我</h3>
 				<p class="webls_head_para">就小小的自我介紹一下</p>
 			</div>
 			<div class="col-md-8 weblayout_about_right">
 				<p>想梗想梗想梗可以打一大堆的廢話 <i>用這個標籤可以跳空白記得喔</i></p>
 				<ul>
-				<li>這個箭頭可能會有剽竊嫌疑 檔案名稱 font-awesome.min.css <i class="fa fa-long-arrow-right" aria-hidden="true"></i>如果沒有以後就是素材</li>
+				<!--<li>這個箭頭可能會有用途 檔案名稱 font-awesome.min.css <i class="fa fa-long-arrow-right" aria-hidden="true"></li></li>-->
 				</ul>
 
 			</div>
@@ -146,56 +226,61 @@
 	<div class="about-bottom">
 		<div class="container">
 			<div class="col-md-7 webinfo_about_bottom_right">
-				<h2>我們可以在這裡設計 多元的計能專長</h2>
+				<h2><p><span>我們可以在這裡設計一些小小的背景故事</span></p></h2>
 				<div class="col-md-6 webinfo_about_bottom_right_wthree">
 					<ul>
-						<li></i>雖然圖片狗屎爛</li>
+						<li></i>雖然圖片我們還沒想到一個主題</li>
 						<li>但這個</li>
 						<li></i>設計</li>
-						<li></i>六個一排的</li>
-						<li></i>欄位</li>
+						<li></i>後面可以修正</li>
+						<li></i>現在只測試一先欄位的排版</li>
 					</ul>
 				</div>
 				<div class="col-md-6 webinfo_about_bottom_right_wthree">
 					<ul>
-						<li></i>你可以</li>
+						<li></i>未來</li>
 						<li></i>看到</li>
-						<li></i>我分段</li>
-						<li></i>的樣子</li>
-						<li></i>有沒有很開心</li>
+						<li></i>新的排版方式</li>
+						<li></i>我們也可以再修正</li>
+						<li></i>這是一個崇高的目標</li>
+						<li></i>一個可自行調整的版型</li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="col-md-5 webinfo_about_bottom_left">
-				<img src="images/hamster.png" alt=" " class="img-responsive" />
+				<!--<img src="images/hamster.png" alt=" " class="img-responsive" />-->
+				
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 <!-- //about-bottom -->
+            <!--SeoPress section-->
+            <section id="localseo" class="localseo  sections1">
+            </section><!-- End off Service Section -->
 <!-- services -->
 	<div class="services" id="services">
 		<div class="container">
-			<h3 class="w3l_head w3l_head1">服務項目</h3>
+			<h3 class="teamweb_head teamweb_head1">服務項目</h3>
 			<p class="webls_head_para webls_head_para1">我們主要服務的內容</p>
-			<div class="w3_weblayout_services_grids">
-				<div class="col-md-3 w3_weblayout_services_grid">
-					<div class="w3_weblayout_services_grid_agile">
+			<div class="web_weblayout_services_grids">
+				<div class="col-md-3 web_weblayout_services_grid">
+					<div class="web_weblayout_services_grid_agile">
 						<h3>除了賣便當</h3>
 						<p>到底還要做什麼?</p>
 					</div>
 				</div>
 				
-				<div class="col-md-3 w3_weblayout_services_grid">
-					<div class="w3_weblayout_services_grid_agile">
+				<div class="col-md-3 web_weblayout_services_grid">
+					<div class="web_weblayout_services_grid_agile">
 						<h3>需要大家</h3>
 						<p>開始集思廣義一下</p>
 					</div>
 				</div>
 				
-				<div class="col-md-3 w3_weblayout_services_grid">
-					<div class="w3_weblayout_services_grid_agile">
+				<div class="col-md-3 web_weblayout_services_grid">
+					<div class="web_weblayout_services_grid_agile">
 						<h3>不然課長失業以後</h3>
 						<p>就準備登出了</p>
 					</div>
@@ -208,15 +293,15 @@
 <!-- team -->
 	<div class="team" id="team">
 		<div class="container">
-			<h3 class="w3l_head w3l_head1 w3l_head1_mylayout">目前參與計畫的人有誰?</h3>
+			<h3 class="teamweb_head teamweb_head1 teamweb_head1_mylayout">目前參與計畫的人有誰?</h3>
 			<p class="webls_head_para webls_head_para1">我也不知道</p>
-			<div class="w3_team_grids">
-				<div class="col-md-3 w3_team_grid">
-					<div class="w3_team_grid1">
+			<div class="web_team_grids">
+				<div class="col-md-3 web_team_grid">
+					<div class="web_team_grid1">
 						<img src="images/hamster.png" alt=" " class="img-responsive" />
 						<div class="myteam_grid1_pos">
 							<ul class="webls_social">
-								<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="web_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 								<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
@@ -225,8 +310,8 @@
 					<p>便當招集人</p>
 				</div>
 				
-				<div class="col-md-3 w3_team_grid">
-					<div class="w3_team_grid1">
+				<div class="col-md-3 web_team_grid">
+					<div class="web_team_grid1">
 						<img src="images/Bamboo-rat.png" alt=" " class="img-responsive" />
 						<div class="myteam_grid1_pos">
 						</div>
@@ -243,10 +328,10 @@
 <!-- gallery -->
 	<div class="team-bottom" id="work">
 		<div class="container">
-			<h3 class="w3l_head w3l_head1">作品及</h3>
+			<h3 class="teamweb_head teamweb_head1">作品及</h3>
 			<p class="webls_head_para webls_head_para1">我們美美的作品及便當味</p>
 			<div class="mylayout_gallery_grids">
-				<ul class="w3l_gallery_grid" id="lightGallery">
+				<ul class="webl_gallery_grid" id="lightGallery">
 
 					<li data-title="2019 未來式" data-desc="我還沒去日本" data-src="images/pancake.jpg" data-responsive-src="images/pancake.jpg"> 
 						<div class="mylayout_gallery_grid1 box">
@@ -303,10 +388,10 @@
 							</a>
 						</div>
 					</li>
-					<li data-title="20181204" data-desc="嗚嗚嗚嗚" data-src="images/pancake2.jpg" data-responsive-src="images/pancake.jpg"> 
+					<li data-title="20181204" data-desc="嗚嗚嗚嗚" data-src="images/pancake2.jpg" data-responsive-src="images/pancake2.jpg"> 
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/pancake.jpg" alt=" " class="img-responsive" />
+								<img src="images/pancake2.jpg" alt=" " class="img-responsive" />
 								<div class="overbox">
 									<h4 class="title overtext"> 很多食物 </h4>
 									<p class="tagline overtext"> 我很喜歡</p>
@@ -332,7 +417,7 @@
     </script>
 <!-- //gallery -->
 
-			<!-- Stats-Number-Scroller-Animation-JavaScript -->
+<!-- Stats-Number-Scroller-Animation-JavaScript -->
 				<script src="js/waypoints.min.js"></script> 
 				<script src="js/counterup.min.js"></script> 
 				<script>
@@ -343,7 +428,7 @@
 						});
 					});
 				</script>
-			<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+<!-- //Stats-Number-Scroller-Animation-JavaScript -->
 
 		</div>
 	</div>
@@ -351,9 +436,9 @@
 <!-- mail -
 	<div class="mail" id="mail">
 		<div class="container">
-			<h3 class="w3l_head w3l_head1">Mail Us</h3>
+			<h3 class="teamweb_head teamweb_head1">Mail Us</h3>
 			<p class="webls_head_para webls_head_para1">send us a message</p>
-			<div class="w3_mail_grids">
+			<div class="web_mail_grids">
 				<form action="#" method="post">
 					<span class="input input--jiro">
 						<input class="input__field input__field--jiro" type="text" id="input-10" name="Name" placeholder="Your Name" required=""/>
@@ -416,18 +501,11 @@
 			})();
 		</script>
 <!-- //mail -->
-<!---<div class="map">
-	<div class="container">
-		<h3 class="w3l_head w3l_head1">Locate Us</h3>
-		<p class="webls_head_para webls_head_para1">how to find us</p>
-	</div>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.9930629574787!2d-46.72469593507033!3d-23.640419470401582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5116b59b5a09%3A0x11c3bbea465870!2sCompany+Business+Towers+-+V%C3%A1rzea+de+Baixo%2C+S%C3%A3o+Paulo+-+SP%2C+Brazil!5e0!3m2!1sen!2sin!4v1473675527894" style="border:0"></iframe>
-</div>--->
 <!-- footer -->
-	<div class="w3l_footer" id="mail2">
+	<div class="webl_footer" id="mail2">
 		<div class="container">
-			<h3 class="w3l_head w3l_head1 w3l_head1_mylayout">加入我們 開始維護大量的狗屎爛網站!</h3>
-			<p class="webls_head_para webls_head_para1">不然打斷你的腳</p>
+			<h3 class="teamweb_head teamweb_head1 teamweb_head1_mylayout">加入我們 開始維護大量的網站!</h3>
+			<p class="webls_head_para webls_head_para1">不然我也沒辦法</p>
 			<form action="#" method="post">
 				<input type="email" name="Email" placeholder="Email" required="">
 				<input type="submit" value="Subscribe">
@@ -478,41 +556,34 @@
 				</div>
 			</div>
 		</div>
-		<div class="w3l_footer_pos">
+		<div class="web_footer_pos">
 			<p>2019.My Personal Statement <a href="https://github.com/zzack2100/Teamfirst_statement" target="_blank" title="William.liu">William.liu</a></p>
 		</div>
 	</div>
 <!-- //footer -->
+ <!-- JS includes -->
+ <script src="js/main.js"></script>
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- start-smooth-scrolling -->
+<!-- Active js -->
+<script src="js/active.js"></script>
+<!-- mOVE TP tOP -->
 <script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smooth-scrolling -->
-<!-- here stars scrolling icon   向上到首頁   move-top.js-->
+<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
-				var defaults = {
+			var defaults = {
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
 				easingType: 'linear' 
-				};
+			};
 			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });     
-								
-			});
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
