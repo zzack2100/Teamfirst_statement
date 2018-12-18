@@ -45,14 +45,8 @@
 <!--字體jQuery -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <!--字體jQuery -->
-
-
-
-
 <!-- //js -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
@@ -61,81 +55,134 @@
 	<link href="http://fonts.googleapis.com/css?family=Black+And+White+Picture" rel='stylesheet'>
 
     <!-- Icon Fonts -->
+<script src="js/responsiveslides.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns"
+      });
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "transparent-btns"
+      });
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "large-btns"
+      });
+	   // Slideshow 4
+      $("#slider4").responsiveSlides({
+	    auto: true,//跳轉功能為true
+		pager:false,
+		nav:false,
+		speed: 1000,//調整速度
+		namespace: "callbacks",
 
-    <script>
-       
-
-    </script>
-
-   
+		
+		// before: function () {
+		// $('.events').append("<li>before event fired.</li>");
+		// 			},
+		// after: function () {
+		// $('.events').append("<li>after event fired.</li>");
+		// }
+		});
+						
+});
+  </script>
+  
 </head>
 	
 <body>
 <div class="about" id="about">
-	<div class="banner">
-    <!-- Preloader -->
-
-
+	<div class="startbanner">
+<!-- 故事內容(右) -->
+<div id="logostory"  >
 <!-- logo紙怪圖片(左) -->
+ <div class="container">
 <div id="logo">
     <img src="../Teamfirst_statement/images/artist.png" id="logoimg" > 
 </div> 
+				<!-- 連結按鈕(下) class(css)樣式參照button-type.css-->
 
-<!-- 故事內容(右) -->
-<div id="logostory" >
-        <p>將手的溫度傳遞下去</p>
-        <p>張張手作</p>
-        <p>張張都擁有各自的故事</p>
-        <p>溫潤的手抄紙+優雅的毛紙邊+壓凹手感</p>
-        <p>都讓我深深著迷</p>
-        <p>現在告訴你也告訴我自己</p>
-        <p>目標確定就勇往直前吧!</p>
-    </div>
-<!-- 連結按鈕(下) class(css)樣式參照button-type.css-->
-    <div id="logobutton">
             <a href="index.html" class="r-link ai-element ai-element_bg ai-element7">
                     <span class="ai-element__label">點我進入</span>
                 </a>
-            </div>
-   
-
-
-	</div>
-
-
-
-
-   
- 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
- <!-- <video width="600" height="400" controls>
-  <source src="video/pc.webm" type="video/mp4">
-
-</video>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/diuexInkshA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<li></li>
-
-<h1>  <a id="logo-text "  class="logo-text"  target="_blank"> <font color="white">燃燒生命有很多種方法，最愚蠢的就是過勞 </font></h1> 
-
-<li></li> -->
-
+ </div>
 			
-    </div>		
+		
+          <ul class="startr-slides" id="slider4">
+		  	
+					<li>
+			
+					<p> <span>將手的溫度傳遞下去</span> </p>
+					</li>
+					<li>
+					<p>將手的溫度傳遞下去</p>
+					<p>張張手作 </p>
+				
+					</li>
+					
+					<li>
+					     <p>將手的溫度傳遞下去</p>
+					     <p>張張手作</p>
+                         <p>張張都擁有各自的故事</p>
+					</li>		
+				<li>
+					     <p>將手的溫度傳遞下去</p>
+					     <p>張張手作</p>
+                         <p>張張都擁有各自的故事</p>
+						 <p>溫潤的手抄紙+優雅的毛紙邊+壓凹手感</p>
+				
+				</li>
+				
+				<li>
+					     <p>將手的溫度傳遞下去</p>
+					     <p>張張手作</p>
+                         <p>張張都擁有各自的故事</p>
+						 <p>溫潤的手抄紙+優雅的毛紙邊+壓凹手感</p>
+						 <p>都讓我深深著迷</p>
+				</li>
+	
+			    <li>
+					     <p>將手的溫度傳遞下去</p>
+					     <p>張張手作</p>
+                         <p>張張都擁有各自的故事</p>
+						 <p>溫潤的手抄紙+優雅的毛紙邊+壓凹手感</p>
+						 <p>都讓我深深著迷</p>
+						 <p>現在告訴你也告訴我自己</p>
+				</li>
+				
+				<li>
+					     <p>將手的溫度傳遞下去</p>
+					     <p>張張手作</p>
+                         <p>張張都擁有各自的故事</p>
+						 <p>溫潤的手抄紙+優雅的毛紙邊+壓凹手感</p>
+						 <p>都讓我深深著迷</p>
+						 <p>現在告訴你也告訴我自己</p>
+						  <p>目標確定就勇往直前吧!</p>
+				</li>
+
+
+          </ul>	
+	   </div> 
 	   </div>	
+	   
 <!-- header -->
 
 <!-- //here ends scrolling icon -->

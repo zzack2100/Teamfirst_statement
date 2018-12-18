@@ -6,21 +6,19 @@ html, body{
     padding: 0;
 }
 
-.banner{
+.startbanner{
 	background:url(../images/background.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-    min-height:600px;
+    min-height:999px;
     text-align:center;
 }
 
 
- 
-
-.logo-text {
+.start-text {
     font-family: 'Charmonman', cursive;
     color:#000;
 }
@@ -41,8 +39,8 @@ html, body{
 
 #logoimg{
     line-height:20px;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     float: left;
 
    
@@ -53,16 +51,21 @@ html, body{
     display: inline-block;
     text-align: initial;
     margin: 50px;
-    margin-left: 150px;
+    margin-left: 10px;
     font-family: 'Charmonman', cursive;
     font-size: 24px;
-    color:#001aff;
 }
-/*  連結按鈕(下)  用到 logobutton*/
-#logobutton{
 
- padding-block-end: 130px;
- color:#14162b;
- size:30%;
- 
-}
+/*--slider--*/
+
+.startr-slides {
+  margin: 0 auto;
+  font-family: 'Charmonman', cursive;
+  color:#fff;
+  display: inline-block;
+  position: relative;
+  float: right;
+  font-size:20px;
+  width: 100%;
+  }
+  

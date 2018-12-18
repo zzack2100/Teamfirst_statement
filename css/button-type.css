@@ -34,9 +34,9 @@ DEMO DEPENDENCIES
 /* ai-element_padding-all */ 
 
 .ai-element_padding-all{
-	--uiaiElementLineWeight: var(--aiElementLineWeight, 2px);
+	--uiaiElementLineWeight: var(--aiElementLineWeight, 1px);
 	--uiaiElementLineColor: var(--aiElementLineColor, #000);
-	--uiaiElementPadding: var(--aiElementPadding, 5px);
+	--uiaiElementPadding: var(--aiElementPadding, 2px);
 
 	padding: var(--uiaiElementPadding);
 }
@@ -486,11 +486,11 @@ SETTINGS
 */
 
 .ai-element{
-	--aiElementPadding: 10px 15px;
-	--aiElementLineWeight: 5px;
-	--aiElementLineColor: #243aab;
-	--aiElementTextColor: #1b255a;
-	--aiElementTextColorHover: #243aab;
+	--aiElementPadding: 3px 2px;
+	--aiElementLineWeight: 1px;
+	--aiElementLineColor: #000;
+	--aiElementTextColor: #000;
+	--aiElementTextColorHover: #000;
 }
 
 .ai-element_bg{
