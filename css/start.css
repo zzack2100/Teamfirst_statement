@@ -1,0 +1,33 @@
+html, body{
+    font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background:#fff;
+	margin: 0;
+}
+
+.banner{
+	background:url(../images/title.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+    min-height:600px;
+    text-align:center;
+}
+
+
+ 
+
+.logo-text {
+    font-family: 'Charmonman', cursive;
+    color:#000;
+}
+
+.logo-text {
+    font-size: 50px;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+}

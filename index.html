@@ -16,13 +16,11 @@
                      return false;
                     //禁止Shift+F10
                  } else if((e.shiftKey) && (e.keyCode == 121)){
-
                      return false;
                 }
              };
             //禁止右鍵
              document.oncontextmenu = function() {
-
                  return false;
              }
         }
@@ -55,7 +53,6 @@
   <script>
     // You can also use "$(window).load(function() {"
     $(function () {
-
       // Slideshow 1
       $("#slider1").responsiveSlides({
         auto: false,
@@ -65,7 +62,6 @@
         maxwidth: 800,
         namespace: "centered-btns"
       });
-
       // Slideshow 2
       $("#slider2").responsiveSlides({
         auto: false,
@@ -75,7 +71,6 @@
         maxwidth: 800,
         namespace: "transparent-btns"
       });
-
       // Slideshow 3
       $("#slider3").responsiveSlides({
         auto: false,
@@ -87,17 +82,19 @@
       });
 	   // Slideshow 4
       $("#slider4").responsiveSlides({
-	    auto: true,
+	    auto: true,//跳轉功能為true
 		pager:false,
 		nav:false,
-		speed: 500,
+		speed: 500,//調整速度
 		namespace: "callbacks",
-		before: function () {
-		$('.events').append("<li>before event fired.</li>");
-					},
-		after: function () {
-		$('.events').append("<li>after event fired.</li>");
-		}
+
+		
+		// before: function () {
+		// $('.events').append("<li>before event fired.</li>");
+		// 			},
+		// after: function () {
+		// $('.events').append("<li>after event fired.</li>");
+		// }
 		});
 						
 });
@@ -155,7 +152,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<li>  
-				   <div id="movetxt"> <h1> <a id="logo-text "  class="logo-text" href="https://github.com/zzack2100/Teamfirst_statement" target="_blank"> William.liu</a></h1> </div>
+				   <div id="movetxt" <h1> <a id="logo-text "  class="logo-text" href="https://github.com/zzack2100/Teamfirst_statement" target="_blank"> William.liu</a></h1> </div>
 				
                     </li>     
 						  
@@ -174,7 +171,7 @@
 							<li><a href="#work" class="scroll"><span data-hover="作品集"> 作品集</span></a></li>
 							<li><a href="#team" class="scroll"><span data-hover="小組成員">小組成員</span></a></li>
 							<li><a href="#mail2" class="scroll"><span data-hover="聯絡我們">聯絡我們</span></a></li>
-							<li ><a href="../Teamfirst_statement/message.html"><span data-hover="留言板">留言板</span></a></li>
+							<li><a href="../Teamfirst_statement/message.html" class="scroll"><span data-hover="留言板">留言板</span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -330,9 +327,9 @@
 		<div class="container">
 			<h3 class="teamweb_head teamweb_head1">作品及</h3>
 			<p class="webls_head_para webls_head_para1">我們美美的作品及便當味</p>
+			
 			<div class="mylayout_gallery_grids">
 				<ul class="webl_gallery_grid" id="lightGallery">
-
 					<li data-title="2019 未來式" data-desc="我還沒去日本" data-src="images/pancake.jpg" data-responsive-src="images/pancake.jpg"> 
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
@@ -477,22 +474,18 @@
 						};
 					})();
 				}
-
 				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
 					// in case the input is already filled..
 					if( inputEl.value.trim() !== '' ) {
 						classie.add( inputEl.parentNode, 'input--filled' );
 					}
-
 					// events:
 					inputEl.addEventListener( 'focus', onInputFocus );
 					inputEl.addEventListener( 'blur', onInputBlur );
 				} );
-
 				function onInputFocus( ev ) {
 					classie.add( ev.target.parentNode, 'input--filled' );
 				}
-
 				function onInputBlur( ev ) {
 					if( ev.target.value.trim() === '' ) {
 						classie.remove( ev.target.parentNode, 'input--filled' );
