@@ -2,11 +2,12 @@ html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
-	margin: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .banner{
-	background:url(../images/title.jpg) no-repeat 0px 0px;
+	background:url(../images/background.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -25,9 +26,43 @@ html, body{
 }
 
 .logo-text {
-    font-size: 50px;
+    font-size: 20px;
     line-height: 1;
     white-space: nowrap;
     text-decoration: none;
     display: inline-block;
+}
+
+ /* logo紙怪圖片(左) 用到logo，logoimg*/
+#logo{
+    display: inline-block;
+}
+
+
+#logoimg{
+    line-height:20px;
+    width: 400px;
+    height: 400px;
+    float: left;
+
+   
+}
+/* 故事內容(右)  logostory*/
+#logostory{
+    line-height:50px;
+    display: inline-block;
+    text-align: initial;
+    margin: 50px;
+    margin-left: 150px;
+    font-family: 'Charmonman', cursive;
+    font-size: 24px;
+    color:#001aff;
+}
+/*  連結按鈕(下)  用到 logobutton*/
+#logobutton{
+
+ padding-block-end: 130px;
+ color:#14162b;
+ size:30%;
+ 
 }
