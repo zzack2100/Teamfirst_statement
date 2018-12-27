@@ -10,7 +10,7 @@
   }
 
 .rslides li {
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   position: absolute;
   display: none;
   width: 100%;
