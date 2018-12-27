@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!--新增防小人功能-->
-      <script type="text/javascript">
+	<!--新增防小人功能-->
+	<!-- <script type="text/javascript">
           window.onload = function() {
              document.onkeydown = function() {
                  var e = window.event || arguments[0];
@@ -24,185 +25,212 @@
                  return false;
              }
         }
-     </script>
-<!--新增防小人功能到時後直接寫一個JS套上去-->
+     </script> -->
+	<!--新增防小人功能到時後直接寫一個JS套上去-->
 
-<title>首頁</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
+	<title>首頁</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
 
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <link  href="css/responsiveslides.css" rel="stylesheet">
-<!-- js -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<!-- gallery -->
-<link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
-<!-- //gallery -->
-<!-- font-awesome icons -->
-<link rel="stylesheet" href="css/font-awesome.min.css" />
-<!-- //font-awesome icons -->
-<link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<script src="js/responsiveslides.js"></script>
-  <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      // Slideshow 1
-      $("#slider1").responsiveSlides({
-        auto: false,
-        pager: true,
-        nav: true,
-        speed: 500,
-        maxwidth: 800,
-        namespace: "centered-btns"
-      });
-      // Slideshow 2
-      $("#slider2").responsiveSlides({
-        auto: false,
-        pager: true,
-        nav: true,
-        speed: 500,
-        maxwidth: 800,
-        namespace: "transparent-btns"
-      });
-      // Slideshow 3
-      $("#slider3").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        maxwidth: 800,
-        namespace: "large-btns"
-      });
-	   // Slideshow 4
-      $("#slider4").responsiveSlides({
-	    auto: true,//跳轉功能為true
-		pager:false,
-		nav:false,
-		speed: 500,//調整速度
-		namespace: "callbacks",
 
-		
-		// before: function () {
-		// $('.events').append("<li>before event fired.</li>");
-		// 			},
-		// after: function () {
-		// $('.events').append("<li>after event fired.</li>");
-		// }
+
+
+
+
+
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/responsiveslides.css" rel="stylesheet">
+	<!-- js -->
+	<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+
+
+	<!-- //js -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+	<!-- gallery -->
+	<link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
+	<!-- //gallery -->
+	<!-- font-awesome icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<!-- //font-awesome icons -->
+	<link href="http://fonts.googleapis.com/css?family=Questrial" js rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	 rel='stylesheet' type='text/css'>
+	<script src="js/responsiveslides.js"></script>
+
+
+<!-- 服務項目左右兩圖的js -->
+	<script src="js/desk.js"></script>
+	<script src="js/desk-formchimp.js"></script>
+	<script src="js/desk-magnific-popup.js"></script>
+	<script src="js/desk-plugins.js"></script>
+<!-- 服務項目左右兩圖的js -->
+
+
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 1
+			$("#slider1").responsiveSlides({
+				auto: false,
+				pager: true,
+				nav: true,
+				speed: 500,
+				maxwidth: 800,
+				namespace: "centered-btns"
+			});
+			// Slideshow 2
+			$("#slider2").responsiveSlides({
+				auto: false,
+				pager: true,
+				nav: true,
+				speed: 500,
+				maxwidth: 800,
+				namespace: "transparent-btns"
+			});
+			// Slideshow 3
+			$("#slider3").responsiveSlides({
+				auto: false,
+				pager: false,
+				nav: true,
+				speed: 500,
+				maxwidth: 800,
+				namespace: "large-btns"
+			});
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,//跳轉功能為true
+				pager: false,
+				nav: false,
+				speed: 500,//調整速度
+				namespace: "callbacks",
+
+
+				// before: function () {
+				// $('.events').append("<li>before event fired.</li>");
+				// 			},
+				// after: function () {
+				// $('.events').append("<li>after event fired.</li>");
+				// }
+			});
+
 		});
-						
-});
-  </script>
+	</script>
 
-    <!-- Google Fonts -->
+	<!-- Google Fonts -->
 
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Cantarell" rel='stylesheet'>
 	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel='stylesheet'>
 	<link href="http://fonts.googleapis.com/css?family=Black+And+White+Picture" rel='stylesheet'>
 
-    <!-- Icon Fonts -->
-    <link href="fonts/icomoon/style.css" rel="stylesheet">
-    <link href="css/loding.css" rel="stylesheet">
+	<!-- Icon Fonts -->
+	<link href="fonts/icomoon/style.css" rel="stylesheet">
+	<link href="css/loding.css" rel="stylesheet">
 </head>
-	
+
 <body>
-    <!-- Preloader -->
-    <div class="preloader image-flex item-content-center items-center">
-        <div class="preloader-circle"></div>
-        <div class="preloader-img">
-            <img src="images/artist.png" alt="">
-        </div>
-    </div>
-<!-- header -->
-<div class="titlecolor" id="titlecolor">
-	<div class="header">
-		<div class="mylayout_header_left">
-			<p>這是正式版的第一次自我介紹</p>
-	  <embed src="media/Samurai-Champloo.mp3" width="80" height="44" autostart="true" loop="true"></embed>
+	<!-- Preloader -->
+
+
+
+
+	<div class="preloader image-flex item-content-center items-center">
+		<div class="preloader-circle"></div>
+		<div class="preloader-img">
+			<img src="images/artist.png" alt="">
 		</div>
-		<div class="mylayout_header_right">
-			<ul>
-				<li><i class="fa fa-phone" aria-hidden="true"></i>(+886) 915 028 282</li>
-				<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:100412082@stud.sju.edu.tw">100412082@stud.sju.edu.tw</a></li>
-			<ul class="webls_social">
-				<li><a href="#" class="web_agile_facebook"><i class="fa fa-facebook" ></i></a></li>
-				<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" ></i></a></li>
-			</ul>
-			</ul>
-		</div>
-		<div class="clearfix"> </div>
 	</div>
-	<div class="web_navigation">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-					    <span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<li>  
-				   <div id="movetxt" <h1> <a id="logo-text"  class="logo-text" href="https://github.com/zzack2100/Teamfirst_statement" target="_blank"> William.liu</a></h1> </div>
-				
-                    </li>     
-						  
-					   
-					<!--div class="web_navigation_pos">
+	<!-- header -->
+	<div class="titlecolor" id="titlecolor">
+		<div class="header">
+			<div class="mylayout_header_left">
+				<p>這是正式版的第一次自我介紹</p>
+				<embed src="media/Samurai-Champloo.mp3" width="80" height="44" autostart="true" loop="true"></embed>
+			</div>
+			<div class="mylayout_header_right">
+				<ul>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+886) 915 028 282</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:100412082@stud.sju.edu.tw">100412082@stud.sju.edu.tw</a></li>
+					<ul class="webls_social">
+						<li><a href="#" class="web_agile_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="web_navigation">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<li>
+							<div id="movetxt" <h1> <a id="logo-text" class="logo-text" href="https://github.com/zzack2100/Teamfirst_statement"
+								 target="_blank"> William.liu</a></h1>
+							</div>
+
+						</li>
+
+
+						<!--div class="web_navigation_pos">
 					
 					</div-->
-				</div>
-				
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					<nav class="cl-effect-5" id="cl-effect-5">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html"><span data-hover="首頁">首頁</span></a></li>
-							<li><a href="#services" class="scroll"><span data-hover="服務項目">服務項目</span></a></li>
-							<li><a href="#about" class="scroll"><span data-hover="關於我">關於我</span></a></li>
-							<li><a href="#work" class="scroll"><span data-hover="作品集"> 作品集</span></a></li>
-							<li><a href="#team" class="scroll"><span data-hover="小組成員">小組成員</span></a></li>
-							<li><a href="#mail2" class="scroll"><span data-hover="聯絡我們">聯絡我們</span></a></li>
-						
-						</ul>
-					</nav>
-				</div>
-			</nav>	
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<nav class="cl-effect-5" id="cl-effect-5">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html"><span data-hover="首頁">首頁</span></a></li>
+								<li><a href="#services" class="scroll"><span data-hover="服務項目">服務項目</span></a></li>
+								<li><a href="#about" class="scroll"><span data-hover="關於我">關於我</span></a></li>
+								<li><a href="#work" class="scroll"><span data-hover="作品集"> 作品集</span></a></li>
+								<li><a href="#team" class="scroll"><span data-hover="小組成員">小組成員</span></a></li>
+								<li><a href="#mail2" class="scroll"><span data-hover="聯絡我們">聯絡我們</span></a></li>
+
+							</ul>
+						</nav>
+					</div>
+				</nav>
+			</div>
 		</div>
 	</div>
-</div>	
-<!-- //header -->
-<!-- banner -->
+	<!-- //header -->
+	<!-- banner -->
 	<div class="banner">
-	
+
 		<div class="container">
-		
-          <ul class="rslides" id="slider4">
-					<li>
-					
-					<p><i> William.liu</i> <span>Why</span> We Would be Write Warm Web?  </p>
-					</li>
-					<li>
-					<p><i> William.liu</i> <span>I</span>  Know We make <span>somthing</span> wrong? </p>
-					</li>
-					<li>
+
+			<ul class="rslides" id="slider4">
+				<li>
+
+					<p><i> William.liu</i> <span>Why</span> We Would be Write Warm Web? </p>
+				</li>
+				<li>
+					<p><i> William.liu</i> <span>I</span> Know We make <span>somthing</span> wrong? </p>
+				</li>
+				<li>
 					<p><i> William.liu</i> <span>Or</span> Just <span>Make</span> Fun ?</p>
-					</li>
-	
-          </ul>
+				</li>
+
+			</ul>
 		</div>
 	</div>
-<!-- //banner -->
-<!-- about -->
+	<!-- //banner -->
+	<!-- about -->
 	<div class="about" id="about">
 		<div class="container">
 			<div class="col-md-4 weblayout_about_left">
@@ -212,19 +240,21 @@
 			<div class="col-md-8 weblayout_about_right">
 				<p>想梗想梗想梗可以打一大堆的廢話 <i>用這個標籤可以跳空白記得喔</i></p>
 				<ul>
-				<!--<li>這個箭頭可能會有用途 檔案名稱 font-awesome.min.css <i class="fa fa-long-arrow-right" aria-hidden="true"></li></li>-->
+					<!--<li>這個箭頭可能會有用途 檔案名稱 font-awesome.min.css <i class="fa fa-long-arrow-right" aria-hidden="true"></li></li>-->
 				</ul>
 
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //about -->
-<!-- about-bottom -->
+	<!-- //about -->
+	<!-- about-bottom -->
 	<div class="about-bottom">
 		<div class="container">
 			<div class="col-md-7 webinfo_about_bottom_right">
-				<h2><p><span>我們可以在這裡設計一些小小的背景故事</span></p></h2>
+				<h2>
+					<p><span>我們可以在這裡設計一些小小的背景故事</span></p>
+				</h2>
 				<div class="col-md-6 webinfo_about_bottom_right_wthree">
 					<ul>
 						<li></i>雖然圖片我們還沒想到一個主題</li>
@@ -248,47 +278,81 @@
 			</div>
 			<div class="col-md-5 webinfo_about_bottom_left">
 				<!--<img src="images/hamster.png" alt=" " class="img-responsive" />-->
-				
+
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //about-bottom -->
-            <!--SeoPress section-->
-            <section id="localseo" class="localseo  sections1">
-            </section><!-- End off Service Section -->
-<!-- services -->
+
+
+
+
 	<div class="services" id="services">
 		<div class="container">
 			<h3 class="teamweb_head teamweb_head1">服務項目</h3>
 			<p class="webls_head_para webls_head_para1">我們主要服務的內容</p>
+
+
+
+
+			<!-- 服務項目左圖動畫 請參照desk.js 163行~173行-->
 			<div class="web_weblayout_services_grids">
+
 				<div class="col-md-3 web_weblayout_services_grid">
 					<div class="web_weblayout_services_grid_agile">
-						<h3>除了賣便當</h3>
-						<p>到底還要做什麼?</p>
+						<section class="transit-04">
+							<div>
+								<img width="200" height="100" class=" localseo" src="../Teamfirst_statement/紙怪/image/寂靜_手工凸版手抄紙明信片/寂靜_手工凸版手抄紙明信片01.JPG" />
+							</div>
+						</section><!-- End off Service Section -->
+
 					</div>
 				</div>
-				
+				<!-- 服務項目左圖動畫 請參照desk.js 163行~173行-->
+
+
 				<div class="col-md-3 web_weblayout_services_grid">
 					<div class="web_weblayout_services_grid_agile">
 						<h3>需要大家</h3>
 						<p>開始集思廣義一下</p>
 					</div>
 				</div>
-				
+
 				<div class="col-md-3 web_weblayout_services_grid">
 					<div class="web_weblayout_services_grid_agile">
 						<h3>不然課長失業以後</h3>
 						<p>就準備登出了</p>
 					</div>
 				</div>
-				
+
+
+
+				<!-- 服務項目右圖動畫 163行~173行-->
+				<div class="col-md-3 web_weblayout_services_grid">
+					<div class="web_weblayout_services_grid_agile">
+						<section class="transit-06">
+							<div>
+								<img width="200" height="100" class=" localseo" src="../Teamfirst_statement/紙怪/image/寂靜_手工凸版手抄紙明信片/寂靜_手工凸版手抄紙明信片01.JPG" />
+							</div>
+						</section><!-- End off Service Section -->
+
+					</div>
+				</div>
+				<!-- 服務項目右圖動畫 163行~173行-->
+
+
 			</div>
+
+
+
+
 		</div>
+
+
+
 	</div>
-<!-- //services -->
-<!-- team -->
+	<!-- //services -->
+	<!-- team -->
 	<div class="team" id="team">
 		<div class="container">
 			<h3 class="teamweb_head teamweb_head1 teamweb_head1_mylayout">目前參與計畫的人有誰?</h3>
@@ -307,7 +371,7 @@
 					<h4>William.liu</h4>
 					<p>便當招集人</p>
 				</div>
-				
+
 				<div class="col-md-3 web_team_grid">
 					<div class="web_team_grid1">
 						<img src="images/Bamboo-rat.png" alt=" " class="img-responsive" />
@@ -317,82 +381,82 @@
 					<h4>Matt.Lu</h4>
 					<p>維護便當員</p>
 				</div>
-				
+
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-<!-- //team -->
-<!-- gallery -->
+	<!-- //team -->
+	<!-- gallery -->
 	<div class="team-bottom" id="work">
 		<div class="container">
-			<h3 class="teamweb_head teamweb_head1">作品及</h3>
-			<p class="webls_head_para webls_head_para1">我們美美的作品及便當味</p>
-			
+			<h3 class="teamweb_head teamweb_head1">紙怪作品集</h3>
+			<p class="webls_head_para webls_head_para1">我們美美的作品</p>
+
 			<div class="mylayout_gallery_grids">
 				<ul class="webl_gallery_grid" id="lightGallery">
-					<li data-title="2019 未來式" data-desc="我還沒去日本" data-src="images/pancake.jpg" data-responsive-src="images/pancake.jpg"> 
+					<li data-title="2019 未來式" data-desc="我還沒去日本" data-src="images/pancake.jpg" data-responsive-src="images/pancake.jpg">
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/pancake.jpg" alt=" " class="img-responsive" />
+								<img src="../Teamfirst_statement/紙怪/image/X'mas 愛麗絲的追逐_手抄紙明信片/X'mas 愛麗絲的追逐_手抄紙明信片01.JPG" alt=" " class="img-responsive" />
 								<div class="overbox">
-									<h4 class="title overtext"> 別人去的日本 </h4>
-									<p class="tagline overtext"> 然後還要跪著要照片 </p>
+									<h4 class="title overtext">熱門首選 </h4>
+									<p class="tagline overtext"> 愛麗絲的追逐_手抄紙明信片 </p>
 								</div>
 							</a>
 						</div>
 					</li>
-					<li data-title="2018 12 月 4號" data-desc="不是我自己買的拉麵" data-src="images/Lāmiàn.jpg" data-responsive-src="Lāmiàn.jpg"> 
+					<li data-title="2018 12 月 4號" data-desc="不是我自己買的拉麵" data-src="images/Lāmiàn.jpg" data-responsive-src="Lāmiàn.jpg">
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/Lāmiàn.jpg" alt=" " class="img-responsive" />
+								<img src="../Teamfirst_statement/紙怪/image/字癮 每個昨日都是有價值的累積_手抄紙明信片/字癮 每個昨日都是有價值的累積_手抄紙明信片01.JPG" alt=" " class="img-responsive" />
 								<div class="overbox">
-									<h4 class="title overtext"> 這張是唯一不用修圖就很漂亮的拉麵 </h4>
-									<p class="tagline overtext">看起來就很好吃，謝謝贊助</p>
+									<h4 class="title overtext"> 經典款項 </h4>
+									<p class="tagline overtext"> 字癮 每個昨日都是有價值的累積_手抄紙明信片</p>
 								</div>
 							</a>
 						</div>
 					</li>
-					<li data-title="20181204" data-desc="Cherry blossoms" data-src="images/Cherry-blossoms.png" data-responsive-src="Cherry-blossoms.png"> 
+					<li data-title="20181204" data-desc="Cherry blossoms" data-src="images/Cherry-blossoms.png" data-responsive-src="Cherry-blossoms.png">
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/Cherry-blossoms.png" alt=" " class="img-responsive" />
+								<img src="../Teamfirst_statement/紙怪/image/復古裝備_手工凸版手抄紙明信片/復古裝備_手工凸版手抄紙明信片01.JPG" alt=" " class="img-responsive" />
 								<div class="overbox">
-									<h4 class="title overtext"> Cherry blossoms </h4>
-									<p class="tagline overtext">櫻花的英文 </p>
+									<h4 class="title overtext"> 復古裝備 </h4>
+									<p class="tagline overtext">復古裝備_手工凸版手抄紙明信片 </p>
 								</div>
 							</a>
 						</div>
 					</li>
-					<li data-title="20181204" data-desc="為甚麼曝光這麼恐怖" data-src="images/train.jpg" data-responsive-src="images/train.jpg"> 
+					<li data-title="20181204" data-desc="為甚麼曝光這麼恐怖" data-src="images/train.jpg" data-responsive-src="images/train.jpg">
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/train.jpg" alt=" " class="img-responsive" />
+								<img src="../Teamfirst_statement/紙怪/image/凝結_手工凸版手抄紙明信片/凝結_手工凸版手抄紙明信片01.JPG" alt=" " class="img-responsive" />
 								<div class="overbox">
-									<h4 class="title overtext">小火車</h4>
-									<p class="tagline overtext">下面好恐怖啊!!</p>
+									<h4 class="title overtext">凝結系列</h4>
+									<p class="tagline overtext">凝結_手工凸版手抄紙明信片</p>
 								</div>
 							</a>
 						</div>
 					</li>
-					<li data-title="20181204" data-desc="這裡也是日本???" data-src="images/bone.jpg" data-responsive-src="images/bone.jpg"> 
+					<li data-title="20181204" data-desc="這裡也是日本???" data-src="images/bone.jpg" data-responsive-src="images/bone.jpg">
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/bone.jpg" alt=" " class="img-responsive" />
+								<img src="../Teamfirst_statement/紙怪/image/只有早餐店老闆娘理解我的帥_手抄紙凸版明信片/只有早餐店老闆娘理解我的帥_手抄紙凸版明信片02.JPG" alt=" " class="img-responsive" />
 								<div class="overbox">
-									<h4 class="title overtext"> 或許是日本? </h4>
-									<p class="tagline overtext"> 不知道是哪裡 </p>
+									<h4 class="title overtext"> 紙怪早餐</h4>
+									<p class="tagline overtext"> 只有早餐店老闆娘理解我的帥</p>
 								</div>
 							</a>
 						</div>
 					</li>
-					<li data-title="20181204" data-desc="嗚嗚嗚嗚" data-src="images/pancake2.jpg" data-responsive-src="images/pancake2.jpg"> 
+					<li data-title="20181204" data-desc="嗚嗚嗚嗚" data-src="images/pancake2.jpg" data-responsive-src="images/pancake2.jpg">
 						<div class="mylayout_gallery_grid1 box">
 							<a href="#">
-								<img src="images/pancake2.jpg" alt=" " class="img-responsive" />
+								<img src="../Teamfirst_statement/紙怪/image/哭泣_手工凸版手抄紙明信片/哭泣_手工凸版手抄紙明信片03.JPG" alt=" " class="img-responsive" />
 								<div class="overbox">
-									<h4 class="title overtext"> 很多食物 </h4>
-									<p class="tagline overtext"> 我很喜歡</p>
+									<h4 class="title overtext"> 傷悲系列</h4>
+									<p class="tagline overtext">哭泣_手工凸版手抄紙明信片</p>
 								</div>
 							</a>
 						</div>
@@ -403,35 +467,35 @@
 	</div>
 	<script src="js/lightGallery.js"></script>
 	<script>
-    	 $(document).ready(function() {
+		$(document).ready(function () {
 			$("#lightGallery").lightGallery({
-				mode:"fade",
-				speed:800,
-				caption:true,
-				desc:true,
-				mobileSrc:true
+				mode: "fade",
+				speed: 800,
+				caption: true,
+				desc: true,
+				mobileSrc: true
 			});
 		});
-    </script>
-<!-- //gallery -->
+	</script>
+	<!-- //gallery -->
 
-<!-- Stats-Number-Scroller-Animation-JavaScript -->
-				<script src="js/waypoints.min.js"></script> 
-				<script src="js/counterup.min.js"></script> 
-				<script>
-					jQuery(document).ready(function( $ ) {
-						$('.counter').counterUp({
-							delay: 100,
-							time: 1000
-						});
-					});
-				</script>
-<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+	<!-- Stats-Number-Scroller-Animation-JavaScript -->
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/counterup.min.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$('.counter').counterUp({
+				delay: 100,
+				time: 1000
+			});
+		});
+	</script>
+	<!-- //Stats-Number-Scroller-Animation-JavaScript -->
 
-		</div>
 	</div>
-<!-- //services-bottom -->
-<!-- mail -
+	</div>
+	<!-- //services-bottom -->
+	<!-- mail -
 	<div class="mail" id="mail">
 		<div class="container">
 			<h3 class="teamweb_head teamweb_head1">Mail Us</h3>
@@ -494,8 +558,8 @@
 				}
 			})();
 		</script>
-<!-- //mail -->
-<!-- footer -->
+ //mail -->
+	<!-- footer -->
 	<div class="webl_footer" id="mail2">
 		<div class="container">
 			<h3 class="teamweb_head teamweb_head1 teamweb_head1_mylayout">加入我們 開始維護大量的網站!</h3>
@@ -504,9 +568,9 @@
 				<input type="email" name="Email" placeholder="Email" required="">
 				<input type="submit" value="Subscribe">
 			</form>
-			<li>	</li>
-			<li>	</li>
-			
+			<li> </li>
+			<li> </li>
+
 			<div class="webls_footer_grids">
 				<!--p class="weblayout_mylayout_est"></p-->
 				<div class="webls_footer_grid">
@@ -514,15 +578,16 @@
 						<div class="webls_footer_grid_leftl">
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 						</div>
-				
+
 						<div class="webls_footer_grid_leftr">
 							<h4>聯絡地址</h4>
 							<div class="map">
-	<div class="container">
+								<div class="container">
 
-	</div>
-	<iframe width='100%' height='200' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=中華民國總統府&z=16&output=embed&t='></iframe>   <!--只要給我打地址就好了喔!!-->
-</div>
+								</div>
+								<iframe width='100%' height='200' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=中華民國總統府&z=16&output=embed&t='></iframe>
+								<!--只要給我打地址就好了喔!!-->
+							</div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -553,23 +618,24 @@
 		<!-- 頁尾  訪客數量-->
 		<div class="web_footer_pos">
 			<p>2019.My Personal Statement <a href="https://github.com/zzack2100/Teamfirst_statement" target="_blank" title="William.liu">William.liu</a>
-				<a href="https://info.flagcounter.com/IWqy"><img src="https://s11.flagcounter.com/count/IWqy/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a></p>
+				<a href="https://info.flagcounter.com/IWqy"><img src="https://s11.flagcounter.com/count/IWqy/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+					 alt="Flag Counter" border="0"></a></p>
 		</div>
 
-		
+
 	</div>
-<!-- //footer -->
- <!-- JS includes -->
- <script src="js/main.js"></script>
-<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-<!-- Active js -->
-<script src="js/active.js"></script>
-<!-- mOVE TP tOP -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<!-- here stars scrolling icon -->
+	<!-- //footer -->
+	<!-- JS includes -->
+	<script src="js/main.js"></script>
+	<!-- for bootstrap working -->
+	<!-- <script src="js/bootstrap.js"></script> -->
+	<!-- Active js -->
+	<script src="js/active.js"></script>
+	<!-- mOVE TP tOP -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			/*
 			var defaults = {
 				containerID: 'toTop', // fading element id
@@ -578,11 +644,12 @@
 				easingType: 'linear' 
 			};
 			*/
-			
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-			
+
 		});
 	</script>
-<!-- //here ends scrolling icon -->
+	<!-- //here ends scrolling icon -->
 </body>
+
 </html>

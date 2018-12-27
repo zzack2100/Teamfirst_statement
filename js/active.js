@@ -80,13 +80,13 @@
                 });
             });
             // init Isotope
-            var $grid = $('.alazea-portfolio').isotope({
-                itemSelector: '.single_portfolio_item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.single_portfolio_item'
-                }
-            });
+            // var $grid = $('.alazea-portfolio').isotope({
+            //     itemSelector: '.single_portfolio_item',
+            //     percentPosition: true,
+            //     masonry: {
+            //         columnWidth: '.single_portfolio_item'
+            //     }
+            // });
         });
     }
 

@@ -64,8 +64,10 @@ html, body{
   color:#fff;
   display: inline-block;
   position: relative;
-  float: right;
+  /* float: right; */
   font-size:20px;
   width: 100%;
   }
   
+
+
