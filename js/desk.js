@@ -164,13 +164,10 @@ jQuery( document ).ready( function ( $ ) {
         .setVelocity( ".transit-03", { top: "26%" }, 600 ).addTo( controller );
 
     new ScrollMagic.Scene( { triggerElement: ".localseo" } )
-        .setVelocity( ".transit-04", { left: "1%" }, 700 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo" } )
         .setVelocity( ".transit-05", { top: "28%" }, 600 ).addTo( controller );
 
     new ScrollMagic.Scene( { triggerElement: ".localseo" } )
-        .setVelocity( ".transit-06", { right: "10%" }, 700 ).addTo( controller );
+        .setVelocity( ".transit-06", { right: "45%" }, 500 ).addTo( controller );
 
     new ScrollMagic.Scene( { triggerElement: ".localseo-hv2" } )
         .setVelocity( ".transit-07", { bottom: "0%" }, 600 ).addTo( controller );

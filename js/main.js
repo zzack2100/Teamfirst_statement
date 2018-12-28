@@ -148,39 +148,6 @@ jQuery( document ).ready( function ( $ ) {
 
     jQuery( '.main-studies' ).imagesLoaded( function () {} );
 
-
-
-
-
-    var controller = new ScrollMagic.Controller();
-
-    new ScrollMagic.Scene( { triggerElement: ".clients" } )
-        .setVelocity( ".transit-01", { bottom: "10%" }, 600 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".clients" } )
-        .setVelocity( ".transit-02", { bottom: "10%" }, 600 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo" } )
-        .setVelocity( ".transit-03", { top: "26%" }, 600 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo" } )
-        .setVelocity( ".transit-04", { left: "1%" }, 700 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo" } )
-        .setVelocity( ".transit-05", { top: "28%" }, 600 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo" } )
-        .setVelocity( ".transit-06", { right: "0%" }, 700 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo-hv2" } )
-        .setVelocity( ".transit-07", { bottom: "0%" }, 600 ).addTo( controller );
-
-    new ScrollMagic.Scene( { triggerElement: ".localseo-hv2" } )
-        .setVelocity( ".transit-08", { bottom: "0%" }, 600 ).addTo( controller );
-
-
-
-
 // nav menu
     $( document ).on( "scroll", function () {
         if ( $( document ).scrollTop() > 0 ) {

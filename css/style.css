@@ -76,6 +76,10 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
      /* background: #000;*/
 	background-image: linear-gradient( 135deg,#fff 10%,#bc41cc 100%);
 }
+.bodycolor{
+	background-image: linear-gradient( 135deg,#fff 10%,#bc41cc 100%);
+}
+
 .navbar-nav {
     float: none;
 }
@@ -151,7 +155,6 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 
 
 /*測試測設測試圖片移動*/
-
 .prcture-move-01{
     width: 14%;
     position: absolute;
@@ -193,6 +196,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
   }
   
 .rslides_container {
+  
   margin-bottom: 50px;
   position: relative;
   float: left;
@@ -220,6 +224,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 /*-- about --*/
 .about,.services,.team-bottom,.mail{
 	padding:5em 0;
+	
 }
 .teamweb_head{
 	font-size: 2.5em;
@@ -1002,7 +1007,8 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 		padding:6em 1em 2em;
 	}
 	.about, .services, .team-bottom, .mail {
-		padding: 4em 0;
+		padding: 5em 0;
+		
 	}
 	.input {
 		max-width: 278px;
@@ -1122,6 +1128,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 	}
 	.services-bottom {
 		min-height: 275px;
+		background: #0000;
 	}
 	.input {
 		max-width: 205px;
@@ -1295,6 +1302,7 @@ input[type="submit"],input[type="reset"],.webls_footer_grid_leftl,.webls_footer_
 @media (max-width: 640px){
 	.banner p {
 		font-size: 1.43em;
+
 	}
 	.about, .services, .team-bottom, .mail {
 		padding: 3em 0;
@@ -1702,7 +1710,7 @@ LocalSeo Section style
 ===========================================*/
 
 .localseo{
-    background-color: #000;
+   
     position: relative;
     overflow: hidden;
 }
@@ -1715,10 +1723,10 @@ LocalSeo Section style
 }
 
 .transit-04{
-    width: 14%;
+    width: 10%;
     position: absolute;
-    left: -40%;
-    top: 55%;
+    left: -400px;
+	top:-191px
 }
 
 .transit-05{
@@ -1729,10 +1737,11 @@ LocalSeo Section style
 }
 
 .transit-06{
-    width: 6%;
+    width: 20%;
     position: absolute;
-    right: -20%;
-    bottom: 12%;
+    right:400px;
+	top:-270px
+
 }
 .sections1 {
     padding-top:10px;
